@@ -1,0 +1,62 @@
+hide: yes #hide from the page select when you add a new page
+
+fields:
+  title:
+    default:
+    instructions: Enter place name here.
+
+  where:
+    display: Place
+    type: location
+
+  postal_address:
+    type: grid
+    display: Postal Address
+    max_rows: 1
+    fields:
+      add_line1:
+        display: Address Line 1
+        type: text
+        width: 20%
+      add_line2:
+        display: Address Line 2
+        type: text
+        width: 20%
+      town:
+        display: Postal Town
+        type: text
+        width: 20%
+      county:
+        display: County
+        type: text
+        width: 20%
+      postcode:
+        display: Postcode
+        type: text
+        width: 20%
+
+  phone:
+    type: text
+    display: Phone Number
+
+  email:
+    type: text
+    display: Email Address
+
+  website:
+    type: grid
+    display: Website
+    max_rows: 1
+    fields:
+      website_name:
+        display: Website Name
+        type: text
+        width: 50%
+        instructions: Type the name of the website here.
+      website_url:
+        display: Website URL
+        type: text
+        width: 50%
+        instructions: Type the full website address here.
+  content:
+    type: hidden
