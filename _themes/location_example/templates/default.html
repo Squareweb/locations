@@ -1,0 +1,49 @@
+{{ entries:map
+  folder="locations"
+  locate_with="where"
+  center_point="54.272442,-4.641724" zoom="6"
+}}
+{{ pop_up }}
+  <h2>{{ title }}</h2>
+
+  <ul class="vcard">
+
+    {{ postal_address }}
+      {{ if add_line1|not_empty }}
+      <li>{{ add_line1 }}</li>
+      {{ endif }}
+
+      {{ if add_line2|not_empty }}
+      <li>{{ add_line2 }}</li>
+      {{ endif }}
+
+      {{ if town|not_empty }}
+      <li>{{ town }}</li>
+      {{ endif }}
+
+      {{ if county|not_empty }}
+      <li>{{ county }}</li>
+      {{ endif }}
+
+      {{ if postcode|not_empty }}
+      <li>{{ postcode }}</li>
+      {{ endif }}
+    {{ /postal_address }}
+
+    {{ if phone|not_empty }}
+    <li><b>Phone:</b> {{ phone }}</li>
+    {{ endif }}
+
+    {{ if email|not_empty }}
+    <li><b>Email:</b> {{ email }}</li>
+    {{ endif }}
+
+    {{ website }}
+      {{ if website_name|not_empty }}
+      <li><b>Web:</b> <a href="{{ website_url }}">{{ website_name }}</a></li>
+      {{ endif }}
+    {{ /website }}
+    
+  </ul>
+{{ /pop_up }}
+{{ /entries:map }}

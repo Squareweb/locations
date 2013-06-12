@@ -1,0 +1,10 @@
+.map {
+  width: 650px;
+  height: 750px;
+  margin: 3em auto;
+  border: 4px solid #eee;
+}
+.vcard {
+  padding-left: 0;
+  list-style: none;
+}
