@@ -9,4 +9,4 @@ There are three elements required to get the locations set up and displaying:
 2. A variable in your page template that triggers the maps Javascript and CSS.
 3. The template code to render the map.
 
-You will find a simple example of what you need to get going in theses files.
+You will find a simple example of what you need to get going in this repo.
